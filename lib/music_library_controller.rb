@@ -46,11 +46,9 @@ class MusicLibraryController
   end
 
   def list_artists
-    # puts Artist.all.sort
   end
 
   def list_genres
-    # puts Genre.all.sort
   end
 
   def list_songs_by_artist
