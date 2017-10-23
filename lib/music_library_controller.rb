@@ -46,6 +46,8 @@ class MusicLibraryController
     Song.all.each do |song|
       songs << song.name
     end
+    songs.sort!
+    
   end
 
   def list_artists
