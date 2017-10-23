@@ -42,12 +42,15 @@ class MusicLibraryController
   end
 
   def list_songs
+    Songs.all.sort
   end
 
   def list_artists
+    Artist.all.sort
   end
 
   def list_genres
+    Genre.all.sort
   end
 
   def list_songs_by_artist
