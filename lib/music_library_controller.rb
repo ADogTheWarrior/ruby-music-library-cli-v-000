@@ -42,7 +42,10 @@ class MusicLibraryController
   end
 
   def list_songs
-    songs = Song.all
+    songs = []
+    Song.all.each do |song|
+      songs << song.name
+    end
   end
 
   def list_artists
