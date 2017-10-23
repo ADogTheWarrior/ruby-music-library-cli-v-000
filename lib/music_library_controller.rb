@@ -31,7 +31,8 @@ class MusicLibraryController
       when 'list genre'
         list_songs_by_genre
       when 'play song'
-        play_song
+        song = gets
+        play_song(gets)
       when 'exit'
 
       else
@@ -55,6 +56,6 @@ class MusicLibraryController
   def list_songs_by_genre
   end
 
-  def play_song
+  def play_song(song_name)
   end
 end
