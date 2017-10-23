@@ -41,15 +41,8 @@ class MusicLibraryController
     end
   end
 
-  def list_songs
-    songs = []
-    Song.all.each do |song|
-      songs << song.name
-    end
-    songs.sort!
-    songs.each do |name|
-      puts name
-    end
+  def list_songs # "1. artist - song - genre"
+    
   end
 
   def list_artists
