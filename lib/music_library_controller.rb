@@ -27,7 +27,6 @@ class MusicLibraryController
       when 'list genres'
         list_genres
       when 'list artist'
-        # artist = gets
         list_songs_by_artist
       when 'list genre'
         list_songs_by_genre
