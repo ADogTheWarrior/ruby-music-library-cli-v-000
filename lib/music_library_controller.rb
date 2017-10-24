@@ -29,14 +29,14 @@ class MusicLibraryController
       when 'list artist'
         puts "Please enter the name of an artist:"
         artist = gets
-        list_songs_by_artist(artist)
+        list_songs_by_artist#(artist)
       when 'list genre'
         puts "Please enter the name of a genre:"
         genre = gets
-        list_songs_by_genre(genre)
+        list_songs_by_genre#(genre)
       when 'play song'
         song = gets
-        play_song(song)
+        play_song#(song)
       when 'exit'
 
       else
@@ -66,12 +66,12 @@ class MusicLibraryController
     end
   end
 
-  def list_songs_by_artist(artist_name)
+  def list_songs_by_artist#(artist_name)
   end
 
-  def list_songs_by_genre(genre_name)
+  def list_songs_by_genre#(genre_name)
   end
 
-  def play_song(song_name)
+  def play_song#(song_name)
   end
 end
