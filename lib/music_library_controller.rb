@@ -42,8 +42,11 @@ class MusicLibraryController
   end
 
   def list_songs # "1. artist - song - genre"
-    output_line = "#{line_number}. #{artist} - #{song} - #{genre}"
-    output_array << output_line
+    sorted_songs = Song.all.sort_by {|song| song.name}
+
+    # alphabatize
+    # the print from array
+    puts "#{line_number}. #{artist} - #{song} - #{genre}"
   end
 
   def list_artists
