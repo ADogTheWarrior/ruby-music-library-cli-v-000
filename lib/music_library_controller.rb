@@ -66,7 +66,7 @@ class MusicLibraryController
     end
   end
 
-  def list_songs_by_artist(artist_name)
+  def list_songs_by_artist
     artist_name =gets
     artist = Artist.find_by_name(artist_name)
     if artist == nil
