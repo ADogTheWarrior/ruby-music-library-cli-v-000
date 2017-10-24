@@ -29,7 +29,7 @@ class MusicLibraryController
       when 'list artist'
         puts "Please enter the name of an artist:"
         # artist = gets
-        list_songs_by_artist(gets)
+        list_songs_by_artist
       when 'list genre'
         puts "Please enter the name of a genre:"
         # genre = gets
@@ -67,6 +67,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist(artist_name)
+    artist_name =gets
     artist = Artist.find_by_name(artist_name)
     if artist == nil
       return nil
