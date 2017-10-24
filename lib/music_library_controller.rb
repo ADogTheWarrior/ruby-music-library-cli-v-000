@@ -71,7 +71,10 @@ class MusicLibraryController
     if artist == nil
       return nil
     end
-    artist.songs.sort_by{|songs| songs.name}
+    sorted_songs = artist.songs.sort_by{|songs| songs.name}
+    sorted_songs.each_with_index do |song, line_number|
+      puts "#{line_number+1}. #{song.name}"
+    end
   end
 
   def list_songs_by_genre(genre_name)
