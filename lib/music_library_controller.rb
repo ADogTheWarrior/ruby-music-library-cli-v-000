@@ -49,9 +49,17 @@ class MusicLibraryController
   end
 
   def list_artists
+    sorted_songs = Song.all.sort_by {|artist| artist.name}
+    sorted_songs.each_with_index do |song, line_number|
+      puts "#{line_number+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+    end
   end
 
   def list_genres
+    sorted_songs = Song.all.sort_by {|genre| genre.name}
+    sorted_songs.each_with_index do |song, line_number|
+      puts "#{line_number+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+    end
   end
 
   def list_songs_by_artist
