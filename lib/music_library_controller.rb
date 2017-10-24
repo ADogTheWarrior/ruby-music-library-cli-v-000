@@ -83,3 +83,5 @@ class MusicLibraryController
   def play_song(song_name)
   end
 end
+
+MusicLibraryController.new.call
