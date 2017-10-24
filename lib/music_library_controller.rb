@@ -30,11 +30,9 @@ class MusicLibraryController
         # artist = gets
         list_songs_by_artist
       when 'list genre'
-        # genre = gets
-        list_songs_by_genre(gets)
+        list_songs_by_genre
       when 'play song'
-        # song = gets
-        play_song(gets)
+        play_song
       when 'exit'
 
       else
