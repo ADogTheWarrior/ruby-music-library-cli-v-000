@@ -42,7 +42,8 @@ class MusicLibraryController
   end
 
   def list_songs # "1. artist - song - genre"
-    
+    output_line = "#{line_number}. #{artist} - #{song} - #{genre}"
+    output_array << output_line
   end
 
   def list_artists
