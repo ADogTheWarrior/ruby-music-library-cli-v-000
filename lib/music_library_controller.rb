@@ -84,4 +84,5 @@ class MusicLibraryController
   end
 end
 
-MusicLibraryController.new.call
+mlc = MusicLibraryController.new
+mlc.call
