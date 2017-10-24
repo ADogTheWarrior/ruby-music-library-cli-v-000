@@ -88,7 +88,11 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    song_name = gets
+    song.find_by_name(gets)
+    if song == nil
+      return
+    end
+    
   end
 end
 
