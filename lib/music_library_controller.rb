@@ -64,8 +64,7 @@ class MusicLibraryController
 
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
-    artist_name =gets
-    artist = Artist.find_by_name(artist_name)
+    artist = Artist.find_by_name(gets)
     if artist == nil
       return nil
     end
@@ -77,7 +76,17 @@ class MusicLibraryController
 
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
-    genre_name = gets
+    genre = Genre.find_by_name(gets)
+
+    
+    # artist = Artist.find_by_name(artist_name)
+    # if artist == nil
+    #   return nil
+    # end
+    # sorted_songs = artist.songs.sort_by{|songs| songs.name}
+    # sorted_songs.each_with_index do |song, line_number|
+    #   puts "#{line_number+1}. #{song.name} - #{song.genre.name}"
+    # end
   end
 
   def play_song
