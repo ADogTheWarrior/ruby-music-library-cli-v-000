@@ -96,6 +96,3 @@ class MusicLibraryController
     puts "Playing #{sorted_songs[song_number-1].name} by #{sorted_songs[song_number-1].artist.name}"
   end
 end
-
-# mlc = MusicLibraryController.new
-# mlc.call
