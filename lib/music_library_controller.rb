@@ -28,15 +28,15 @@ class MusicLibraryController
         list_genres
       when 'list artist'
         puts "Please enter the name of an artist:"
-        artist = gets
-        list_songs_by_artist(artist)
+        # artist = gets
+        list_songs_by_artist(gets)
       when 'list genre'
         puts "Please enter the name of a genre:"
-        genre = gets
-        list_songs_by_genre(genre)
+        # genre = gets
+        list_songs_by_genre(gets)
       when 'play song'
-        song = gets
-        play_song(song)
+        # song = gets
+        play_song(gets)
       when 'exit'
 
       else
