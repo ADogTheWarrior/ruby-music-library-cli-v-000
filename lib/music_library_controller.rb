@@ -62,10 +62,10 @@ class MusicLibraryController
     end
   end
 
-  def list_songs_by_artist
+  def list_songs_by_artist(artist_name)
   end
 
-  def list_songs_by_genre
+  def list_songs_by_genre(genre_name)
   end
 
   def play_song(song_name)
