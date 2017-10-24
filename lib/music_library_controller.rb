@@ -92,7 +92,7 @@ class MusicLibraryController
     if Song.all.size < song_number
       return
     end
-    sorted_songs = Song.all.sort_by{|songs| songs.name}
+    sorted_songs = Song.all.sort_by{|name| name}
     puts "Playing #{sorted_songs[song_number-1].name} by #{sorted_songs[song_number-1].artist.name}"
   end
 end
