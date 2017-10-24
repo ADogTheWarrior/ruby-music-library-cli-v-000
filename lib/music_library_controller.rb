@@ -46,7 +46,7 @@ class MusicLibraryController
 
     # alphabatize
     # the print from array
-    puts "#{line_number}. #{artist} - #{song} - #{genre}"
+    # puts "#{line_number}. #{artist} - #{song} - #{genre}"
   end
 
   def list_artists
