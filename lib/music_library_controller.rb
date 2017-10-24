@@ -67,7 +67,11 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist(artist_name)
-    
+    artist = Artist.find_by_name(artist_name)
+    if artist == nil
+      return nil
+    end
+    artist.songs.sort_by{|songs| songs.name}
   end
 
   def list_songs_by_genre(genre_name)
