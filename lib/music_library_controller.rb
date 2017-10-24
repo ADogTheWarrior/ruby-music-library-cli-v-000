@@ -89,7 +89,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_number = gets.to_i
-    if Song.all.size < song_number
+    if Song.all.size < song_number || song_number < 1
       return
     end
     sorted_songs = Song.all.sort_by{|song| song.name}
